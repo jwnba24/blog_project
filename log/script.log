@@ -1,0 +1,577 @@
+2018-01-22 20:19:00,767 [Thread-2:23272] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\java\blog_project\blog\views.py", line 18, in index
+    return render(request,'index.html')
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\template\loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\template\backends\django.py", line 66, in render
+    return self.template.render(context)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\template\base.py", line 205, in render
+    with context.bind_template(self):
+  File "E:\Python27\lib\contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\template\context.py", line 263, in bind_template
+    updates.update(processor(self.request))
+TypeError: global_setting() takes no arguments (1 given)
+2018-01-22 20:19:01,709 [Thread-3:23704] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-01-22 22:59:36,059 [Thread-3:22796] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-01-23 09:50:27,417 [Thread-3:7824] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-01-23 09:53:09,298 [Thread-27:7836] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/blog/tag/add/
+Traceback (most recent call last):
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\contrib\admin\options.py", line 551, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\utils\decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\views\decorators\cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\contrib\admin\sites.py", line 224, in inner
+    return view(request, *args, **kwargs)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\contrib\admin\options.py", line 1508, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\utils\decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\utils\decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\utils\decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\contrib\admin\options.py", line 1408, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\contrib\admin\options.py", line 1452, in _changeform_view
+    self.log_addition(request, new_object, change_message)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\contrib\admin\options.py", line 724, in log_addition
+    object_repr=force_text(object),
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\utils\encoding.py", line 80, in force_text
+    s = six.text_type(bytes(s), encoding, errors)
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-1: ordinal not in range(128)
+2018-01-23 10:15:05,377 [Thread-42:4424] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\java\blog_project\blog\views.py", line 19, in index
+    return render(request,'index.html')
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\template\loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\template\backends\django.py", line 66, in render
+    return self.template.render(context)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\template\base.py", line 207, in render
+    return self._render(context)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\template\base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\template\loader_tags.py", line 154, in render
+    compiled_parent = self.get_parent(context)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\template\loader_tags.py", line 144, in get_parent
+    raise TemplateSyntaxError(error_msg)
+TemplateSyntaxError: Invalid template name in 'extends' tag: ''. Got this from the 'base.html' variable.
+2018-01-23 12:18:18,066 [Thread-53:7580] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\utils\decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "G:\java\blog_project\blog\views.py", line 40, in index
+    return render(request,'index.html', locals())#locals()灏嗕綔鐢ㄥ煙鎵€鏈夌殑鍙橀噺灏佽骞惰繑鍥?  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\template\loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\template\loader.py", line 21, in get_template
+    return engine.get_template(template_name)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\template\backends\django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\template\engine.py", line 162, in get_template
+    template, origin = self.find_template(template_name)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\template\engine.py", line 136, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\template\loaders\base.py", line 44, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\template\base.py", line 191, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\template\base.py", line 230, in compile_nodelist
+    return parser.parse()
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\template\base.py", line 515, in parse
+    raise self.error(token, e)
+TemplateSyntaxError: Could not parse the remainder: ': '%Y-%m-%d'' from 'article.date_publish |date: '%Y-%m-%d''
+2018-01-23 12:18:42,943 [Thread-59:5236] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\utils\decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "G:\java\blog_project\blog\views.py", line 40, in index
+    return render(request,'index.html', locals())#locals()灏嗕綔鐢ㄥ煙鎵€鏈夌殑鍙橀噺灏佽骞惰繑鍥?  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\template\loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\template\loader.py", line 21, in get_template
+    return engine.get_template(template_name)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\template\backends\django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\template\engine.py", line 162, in get_template
+    template, origin = self.find_template(template_name)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\template\engine.py", line 136, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\template\loaders\base.py", line 44, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\template\base.py", line 191, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\template\base.py", line 230, in compile_nodelist
+    return parser.parse()
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\template\base.py", line 515, in parse
+    raise self.error(token, e)
+TemplateSyntaxError: Could not parse the remainder: ': 'Y-m-d'' from 'article.date_publish |date: 'Y-m-d''
+2018-01-23 12:19:31,690 [Thread-79:7232] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/blog/tag/add/
+Traceback (most recent call last):
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\contrib\admin\options.py", line 551, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\utils\decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\views\decorators\cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\contrib\admin\sites.py", line 224, in inner
+    return view(request, *args, **kwargs)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\contrib\admin\options.py", line 1508, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\utils\decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\utils\decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\utils\decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\contrib\admin\options.py", line 1408, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\contrib\admin\options.py", line 1452, in _changeform_view
+    self.log_addition(request, new_object, change_message)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\contrib\admin\options.py", line 724, in log_addition
+    object_repr=force_text(object),
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\utils\encoding.py", line 80, in force_text
+    s = six.text_type(bytes(s), encoding, errors)
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-1: ordinal not in range(128)
+2018-01-23 15:13:38,602 [Thread-24:5900] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-01-23 16:22:15,322 [Thread-20:6684] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/blog/tag/add/
+Traceback (most recent call last):
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\contrib\admin\options.py", line 551, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\utils\decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\views\decorators\cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\contrib\admin\sites.py", line 224, in inner
+    return view(request, *args, **kwargs)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\contrib\admin\options.py", line 1508, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\utils\decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\utils\decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\utils\decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\contrib\admin\options.py", line 1408, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\contrib\admin\options.py", line 1452, in _changeform_view
+    self.log_addition(request, new_object, change_message)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\contrib\admin\options.py", line 724, in log_addition
+    object_repr=force_text(object),
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\utils\encoding.py", line 80, in force_text
+    s = six.text_type(bytes(s), encoding, errors)
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-3: ordinal not in range(128)
+2018-01-23 16:42:21,351 [Thread-16:8180] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /article/
+Traceback (most recent call last):
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\java\blog_project\blog\views.py", line 101, in article
+    return render(request, 'article.html', locals())
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\template\loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\template\loader.py", line 21, in get_template
+    return engine.get_template(template_name)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\template\backends\django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\template\engine.py", line 162, in get_template
+    template, origin = self.find_template(template_name)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\template\engine.py", line 136, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\template\loaders\base.py", line 44, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\template\base.py", line 191, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\template\base.py", line 230, in compile_nodelist
+    return parser.parse()
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\template\base.py", line 515, in parse
+    raise self.error(token, e)
+TemplateSyntaxError: 'myfilter' is not a registered tag library. Must be one of:
+admin_list
+admin_modify
+admin_static
+admin_urls
+cache
+i18n
+l10n
+log
+static
+staticfiles
+tz
+2018-01-23 16:50:08,542 [Thread-18:7756] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /article/
+Traceback (most recent call last):
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\java\blog_project\blog\views.py", line 101, in article
+    return render(request, 'article.html', locals())
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\template\loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\template\loader.py", line 21, in get_template
+    return engine.get_template(template_name)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\template\backends\django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\template\engine.py", line 162, in get_template
+    template, origin = self.find_template(template_name)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\template\engine.py", line 136, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\template\loaders\base.py", line 44, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\template\base.py", line 191, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\template\base.py", line 230, in compile_nodelist
+    return parser.parse()
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\template\base.py", line 515, in parse
+    raise self.error(token, e)
+TemplateSyntaxError: 'myfilter' is not a registered tag library. Must be one of:
+admin_list
+admin_modify
+admin_static
+admin_urls
+cache
+i18n
+l10n
+log
+static
+staticfiles
+tz
+2018-01-23 16:51:27,994 [Thread-24:4700] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /article/
+Traceback (most recent call last):
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\java\blog_project\blog\views.py", line 101, in article
+    return render(request, 'article.html', locals())
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\template\loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\template\loader.py", line 21, in get_template
+    return engine.get_template(template_name)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\template\backends\django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\template\engine.py", line 162, in get_template
+    template, origin = self.find_template(template_name)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\template\engine.py", line 136, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\template\loaders\base.py", line 44, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\template\base.py", line 191, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\template\base.py", line 230, in compile_nodelist
+    return parser.parse()
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\template\base.py", line 515, in parse
+    raise self.error(token, e)
+TemplateSyntaxError: 'myfilter' is not a registered tag library. Must be one of:
+admin_list
+admin_modify
+admin_static
+admin_urls
+cache
+i18n
+l10n
+log
+static
+staticfiles
+tz
+2018-01-23 16:51:28,594 [Thread-25:6844] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-01-23 16:51:30,973 [Thread-30:7684] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /article/
+Traceback (most recent call last):
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\java\blog_project\blog\views.py", line 101, in article
+    return render(request, 'article.html', locals())
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\template\loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\template\loader.py", line 21, in get_template
+    return engine.get_template(template_name)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\template\backends\django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\template\engine.py", line 162, in get_template
+    template, origin = self.find_template(template_name)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\template\engine.py", line 136, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\template\loaders\base.py", line 44, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\template\base.py", line 191, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\template\base.py", line 230, in compile_nodelist
+    return parser.parse()
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\template\base.py", line 515, in parse
+    raise self.error(token, e)
+TemplateSyntaxError: 'myfilter' is not a registered tag library. Must be one of:
+admin_list
+admin_modify
+admin_static
+admin_urls
+cache
+i18n
+l10n
+log
+static
+staticfiles
+tz
+2018-01-23 16:54:07,849 [Thread-36:7920] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /article/
+Traceback (most recent call last):
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\java\blog_project\blog\views.py", line 101, in article
+    return render(request, 'article.html', locals())
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\template\loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\template\loader.py", line 21, in get_template
+    return engine.get_template(template_name)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\template\backends\django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\template\engine.py", line 162, in get_template
+    template, origin = self.find_template(template_name)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\template\engine.py", line 136, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\template\loaders\base.py", line 44, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\template\base.py", line 191, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\template\base.py", line 230, in compile_nodelist
+    return parser.parse()
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\template\base.py", line 515, in parse
+    raise self.error(token, e)
+TemplateSyntaxError: 'myfilter' is not a registered tag library. Must be one of:
+admin_list
+admin_modify
+admin_static
+admin_urls
+cache
+i18n
+l10n
+log
+static
+staticfiles
+tz
+2018-01-23 16:56:43,013 [Thread-41:7148] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /article/
+Traceback (most recent call last):
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\java\blog_project\blog\views.py", line 101, in article
+    return render(request, 'article.html', locals())
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\template\loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\template\loader.py", line 21, in get_template
+    return engine.get_template(template_name)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\template\backends\django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\template\engine.py", line 162, in get_template
+    template, origin = self.find_template(template_name)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\template\engine.py", line 136, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\template\loaders\base.py", line 44, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\template\base.py", line 191, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\template\base.py", line 230, in compile_nodelist
+    return parser.parse()
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\template\base.py", line 515, in parse
+    raise self.error(token, e)
+TemplateSyntaxError: 'blog.myfilter' is not a registered tag library. Must be one of:
+admin_list
+admin_modify
+admin_static
+admin_urls
+cache
+i18n
+l10n
+log
+static
+staticfiles
+tz
+2018-01-23 16:59:27,726 [Thread-46:6148] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /article/
+Traceback (most recent call last):
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\java\blog_project\blog\views.py", line 101, in article
+    return render(request, 'article.html', locals())
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\template\loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\template\loader.py", line 21, in get_template
+    return engine.get_template(template_name)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\template\backends\django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\template\engine.py", line 162, in get_template
+    template, origin = self.find_template(template_name)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\template\engine.py", line 136, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\template\loaders\base.py", line 44, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\template\base.py", line 191, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\template\base.py", line 230, in compile_nodelist
+    return parser.parse()
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\template\base.py", line 515, in parse
+    raise self.error(token, e)
+TemplateSyntaxError: 'myfilter' is not a registered tag library. Must be one of:
+admin_list
+admin_modify
+admin_static
+admin_urls
+cache
+i18n
+l10n
+log
+static
+staticfiles
+tz
+2018-01-23 17:02:28,811 [Thread-48:6160] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /article/
+Traceback (most recent call last):
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\java\blog_project\blog\views.py", line 101, in article
+    return render(request, 'article.html', locals())
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\template\loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\template\loader.py", line 21, in get_template
+    return engine.get_template(template_name)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\template\backends\django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\template\engine.py", line 162, in get_template
+    template, origin = self.find_template(template_name)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\template\engine.py", line 136, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\template\loaders\base.py", line 44, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\template\base.py", line 191, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\template\base.py", line 230, in compile_nodelist
+    return parser.parse()
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\template\base.py", line 515, in parse
+    raise self.error(token, e)
+TemplateSyntaxError: 'myfilter' is not a registered tag library. Must be one of:
+admin_list
+admin_modify
+admin_static
+admin_urls
+cache
+i18n
+l10n
+log
+static
+staticfiles
+tz
+2018-01-23 17:05:11,066 [Thread-8:2204] [django.request:152] [base:get_response] [WARNING]- Not Found: /admin/blog/
+2018-01-23 17:05:16,040 [Thread-10:5128] [django.request:152] [base:get_response] [WARNING]- Not Found: /admin/blog/
+2018-01-23 17:05:22,309 [Thread-11:4064] [django.request:152] [base:get_response] [WARNING]- Not Found: /admin/
+2018-01-23 17:05:40,584 [Thread-17:1052] [django.request:152] [base:get_response] [WARNING]- Not Found: /admin/
+2018-01-23 17:05:58,821 [Thread-27:7544] [django.request:152] [base:get_response] [WARNING]- Not Found: /admin/
+2018-01-23 17:14:28,269 [Thread-10:1428] [django.request:152] [base:get_response] [WARNING]- Not Found: /article/p.html
+2018-01-23 17:17:24,690 [Thread-49:1360] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /comment/post/
+Traceback (most recent call last):
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\core\handlers\base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view blog.views.comment_post didn't return an HttpResponse object. It returned None instead.
+2018-01-23 17:19:08,401 [Thread-60:4756] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /logout
+Traceback (most recent call last):
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "E:\Python27\lib\site-packages\django-1.11.9-py2.7.egg\django\core\handlers\base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view blog.views.do_logout didn't return an HttpResponse object. It returned None instead.
+2018-01-23 21:26:39,996 [Thread-7:4912] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico

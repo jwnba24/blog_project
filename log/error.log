@@ -1,0 +1,18 @@
+2018-01-22 20:07:09,852 [Thread-2:22796] [blog.views:13] [views:index] [ERROR]- [Errno 2] No such file or directory: u'sss.txt'
+2018-01-23 14:03:56,256 [Thread-2:316] [blog.views:62] [views:index] [ERROR]- (1305, 'FUNCTION blog_project.DATE_FORMATE does not exist')
+2018-01-23 14:04:50,602 [Thread-8:4404] [blog.views:62] [views:index] [ERROR]- (1305, 'FUNCTION blog_project.DATE_FORMATE does not exist')
+2018-01-23 14:06:19,529 [Thread-2:7804] [blog.views:62] [views:index] [ERROR]- (1305, 'FUNCTION blog_project.DATE_FORMATE does not exist')
+2018-01-23 14:08:43,582 [Thread-2:7060] [blog.views:59] [views:index] [ERROR]- ((u'2018-01',),)
+2018-01-23 14:19:38,017 [Thread-2:3508] [blog.views:63] [views:index] [ERROR]- 'ascii' codec can't encode characters in position 5-8: ordinal not in range(128)
+2018-01-23 14:32:05,210 [Thread-2:7040] [blog.views:63] [views:index] [ERROR]- 'ascii' codec can't encode characters in position 5-8: ordinal not in range(128)
+2018-01-23 14:34:12,075 [Thread-2:5744] [blog.views:63] [views:index] [ERROR]- 'ascii' codec can't encode characters in position 5-8: ordinal not in range(128)
+2018-01-23 14:35:50,711 [Thread-2:7852] [blog.views:63] [views:index] [ERROR]- 'ascii' codec can't encode characters in position 5-8: ordinal not in range(128)
+2018-01-23 14:37:37,890 [Thread-2:5512] [blog.views:63] [views:index] [ERROR]- 'ascii' codec can't encode characters in position 5-8: ordinal not in range(128)
+2018-01-23 14:45:28,437 [Thread-2:6328] [blog.views:63] [views:index] [ERROR]- 'ascii' codec can't encode character u'\u5e74' in position 2: ordinal not in range(128)
+2018-01-23 15:04:42,470 [Thread-2:8052] [blog.views:71] [views:archive] [ERROR]- 2018-01
+2018-01-23 15:04:57,644 [Thread-8:7436] [blog.views:71] [views:archive] [ERROR]- 2018-01
+2018-01-23 15:05:02,966 [Thread-12:1020] [blog.views:74] [views:archive] [ERROR]- "u'year'"
+2018-01-23 15:09:58,871 [Thread-10:7008] [blog.views:80] [views:archive] [ERROR]- "u'year'"
+2018-01-23 15:10:28,737 [Thread-2:840] [blog.views:80] [views:archive] [ERROR]- "u'year'"
+2018-01-23 15:10:30,674 [Thread-3:5900] [blog.views:80] [views:archive] [ERROR]- "u'year'"
+2018-01-23 15:13:50,819 [Thread-26:2900] [blog.views:80] [views:archive] [ERROR]- "u'year'"
